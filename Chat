@@ -1,0 +1,40 @@
+In diesem Tutorial lernen wir wie man ein Chat Plugin Programmiert.
+
+______________________________________________________________________________________________________________________________________________________________________________________
+1. Du musst einen Server haben der so aus sieht (Tutorial bei mir auf dem Kanal) Schaue dir dieses bild an "https://ibb.co/wz5wx7Z"
+______________________________________________________________________________________________________________________________________________________________________________________
+2. Du musst in deinem Plugin ordner einen "Unterordner" erstellen (Name muss so aussehen "Name.py.dir") Dieses .py.dir ist sehr wichtig für dein Plugin. Bild hier | https://ibb.co/gPpmDrz
+______________________________________________________________________________________________________________________________________________________________________________________
+3. Erstelle in deinem Namen.py.dir Ordner ein Textdokument namens ("plugin.py") Es ist wichtig plugin kleinzuschreiben sonst können nacher Fehler kommen.
+______________________________________________________________________________________________________________________________________________________________________________________
+4. Erstelle in deinem Namen.py.dir Ordner ein Textdukument namens ("plugin.yml") Es ist wichtig plugin kleinzuschreiben sonst können nacher Fehler kommen.
+______________________________________________________________________________________________________________________________________________________________________________________
+5. Öffne dein "plugin.py" Textdokument und schreibe Folgendes rein 
+----------------------------------------------------------------------
+
+"class HalloServerPlugin(PythonPlugin):
+    def onEnable(self):
+        pass
+
+    def onCommand(self, sender, command, label, args):
+        self.getServer().broadcastMessage("Hallo " + args[0] + "!")
+        return True"
+        
+----------------------------------------------------------------------
+______________________________________________________________________________________________________________________________________________________________________________________
+6. Öffne dein Plugin.yml Textdokument und schreibe dort 
+----------------------------------------------------------------------
+name: Hallo Server-Plugin
+main: HalloServerPlugin
+version: 1.2
+commands:
+    halloserver:
+        description: Sendet einen Gruss an den Server
+        usage: /halloserver <name>
+        ----------------------------------------------------------------------
+______________________________________________________________________________________________________________________________________________________________________________________
+7. Starte deinen Server
+______________________________________________________________________________________________________________________________________________________________________________________
+8. Gehe mit der 1.18 Minecraft Version BZW. Die Version die du für deinen Server hasst aus.
+______________________________________________________________________________________________________________________________________________________________________________________
+9. Gehe mit der Server-IP localhost
